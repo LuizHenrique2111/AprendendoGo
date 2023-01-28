@@ -1,0 +1,34 @@
+O Projeto Golang foi lançado em 2007 por Robert Griesemer, Rob Pike e Ken Thompson, todos renomados no meio da ciência da computação. A ideia é criar uma linguagem rápida e fácil.
+
+Temos várias características que determina essa linguagem como uma boa escolha:
+- Compilada.
+- Garbage-collected.
+- Go Runtime próprio.
+- Sintaxe simples.
+- Multiplataforma.
+- Orientada a Objetos (sem herança).
+- Estaticamente e fortemente tipada.
+- Concorrente
+- Suporte a clossures.
+- Funções de múltiplos retornos.
+- Ponteiros
+
+A sintaxe tem por volta de 25 palavras-chaves, ou seja, sintaxe curta, com isso proporcionando um jeito simples de entender o que está acontecendo nos seus programas.
+
+Golang(Go) é para ser rápida, e trabalha com concorrência e paralelismo.
+
+1. Concorrência: Ocorre quando existem dois ou mais processor executados em simultâneo; mais especificamente, o termo é utilizado quando processos disputam o acesso a recursos partilhados.
+
+2. Paralelismo: É uma forma de computação em que vários cálculos são realizados ao mesmo tempo, operando sob o princípio de que grandes problemas geralmente podem ser divididos em problemas menores, que então são resolvidos em paralelo.
+
+Com isso, temos a Goroutine, que é uma função que pode ser executada simultaneamente com outras funções. Tendo em vista que podemos considerá-las como threads, mas com diferenças entre si.
+
+Goroutines são extremamente baratas quando comparadas com threads. Elas ocupam poucos kb no tamanho da pilha, e a pilha pode crescer e encolher de acordo com a necessidade da aplicação, enquanto que no caso de threads o tamanho da pilha deve ser específico e fixo.
+
+Para aprimorar a goroutines podemos utilizar o Go Channels (que servem como conectores).
+
+Nos channels podemos enviar valores para os canais com o intuito de compartilhar dados entre os goroutines.
+
+
+
+Referência: https://higordiego.medium.com/introdu%C3%A7%C3%A3o-ao-golang-8db1fad16672
