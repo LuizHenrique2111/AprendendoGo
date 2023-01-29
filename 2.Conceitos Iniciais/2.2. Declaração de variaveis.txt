@@ -1,2 +1,33 @@
 A declaração de variáveis em Go se da de maneira própria, além disso elas se diferem entre declarar fora ou dentro de um codeblock (-fora-{-dentro-}). Vejamos a seguir alguns exemplos.
 
+- Dentro do codeblock:
+package main
+
+import "fmt"
+
+func main() {
+	esporteFavorito := "Futebol"
+
+	fmt.Println(esporteFavorito)
+}
+
+-------------------------------
+
+Declaração de variável -> esporteFavorito := "Futebol"
+
+Podemos notar algumas peculiaridades de Go, primeiramente não precisamos colocar o tipo para declarar a variável, em Go, assim que você preencher os dados referente a variável a variável irá automaticamente se reconhecer como aquele tipo colocado, no caso do exemplo utilizado ela se torna uma string por ter recebido uma variável string, além disso temos este ':=' que é próprio do Go, e terá que ser usado para declaração da variável dentro de um codeblock. Existem outras maneiras de iniciar uma variável dentro do codeblock, mas para declaração de variável(já inserir o valor enquanto cria a variável) você terá que utilizar a forma mostrada.
+
+-Agora vejamos um exemplo de declaração de variável fora de um codeblock:
+package main
+
+import "fmt"
+
+var esporteFavorito string = "Futebol"
+
+func main() {
+	fmt.Println(esporteFavorito)
+}
+
+--------------------------------------
+
+Como pode perceber, se diferencia bastante da declaração de uma variável dentro do codeblock, devemos utilizar algumas palavras chaves para fazer está declaração, começando por "var", depois o nome da variável e seu tipo, depois você colocar um igual e o valor da sua variável.
