@@ -1,0 +1,2 @@
+A declaração de variáveis em Go se da de maneira própria, além disso elas se diferem entre declarar fora ou dentro de um codeblock (-fora-{-dentro-}). Vejamos a seguir alguns exemplos.
+
