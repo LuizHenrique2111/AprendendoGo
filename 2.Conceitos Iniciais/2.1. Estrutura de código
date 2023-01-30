@@ -1,0 +1,20 @@
+A Estrutura de código em Golang, lembra linguagens orientadas a objetos como Java, segue exemplo:
+--------------------------------
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, World")
+}
+--------------------------------
+
+package main -> Se refere ao pacote principal onde por onde o programa vai começar.
+
+import "fmt" -> Importa uma biblioteca chamada 'fmt' que em Golang é responsavel por imprimir valores no console.
+
+func main() -> Todo código começa pela função main em golang.
+
+{} --> Representa o espaço onde tudo que aquela função em específico poderá fazer.
+
+fmt.Println("Helo, Wolrd) -> Forma de printar algo na tela em golang, no caso aparecerá no console 'Helo, World'.

@@ -1,0 +1,3 @@
+A inicialização de variável se diferencia da declaração, pois ela não define um valor, por exemplo:
+- var notasAlunos int
+Ela não vai se diferenciar dentro ou fora do codeblock, como na declaração.
