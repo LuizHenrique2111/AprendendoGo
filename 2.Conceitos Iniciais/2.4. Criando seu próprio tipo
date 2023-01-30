@@ -1,0 +1,21 @@
+Em Go, você pode criar tipos próprios, fazendo assim com que você possa utiliza-lo posteriormente quando convir.
+
+Para criar um novo tipo você terá que utilizar uma palavra chave ainda não vista chamada "type", segue exemplo abaixo.
+
+- type numerico int
+
+A palavra "numerico" agora virou um tipo que contém as características do tipo int, segue exemplo aplicado dentro do código:
+
+package main
+
+import "fmt"
+
+type nomes string
+var primeiraTurma nomes
+
+func main() {
+	primeiraTurma = "João"
+	fmt.Println(primeiraTurma)
+}
+
+Nesse caso acima criamos um tipo de nome "nomes" onde foi atribuido as características do tipo string, depois inicializamos um variável utilizando o tipo criado e dentro do codeblock inserimos um valor para a variável, essa inserção de valor pode acontecer tanto dentro como fora do codeblock.
