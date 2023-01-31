@@ -1,0 +1,15 @@
+A conversão de tipos em go é feita de maneira muito mais simplificada do que em outras linguagens. Segue exemplo abaixo:
+
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64 = 10
+	fmt.Println(n1)
+
+	n2 := int(n1)
+	fmt.Println(n2)
+}
+
+Neste exemplo acima criamos uma variável n1 de tipo float64(float/double) e criamos outra variável de nome n2 e nela pegamos o valor de n1 e trocamos o tipo para int.
