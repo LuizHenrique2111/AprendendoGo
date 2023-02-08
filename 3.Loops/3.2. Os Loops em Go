@@ -1,0 +1,46 @@
+Como falado anteriormente em Go existem apenas três tipos de loops, que é o Switch, For e o For range, como o Switch já foi mostrado mais especificadamente anteriormente, vamos focar em exemplificar o for, o for range.
+
+---------------------
+FOR
+package main
+
+import "fmt"
+
+func main() {
+
+	for i := 10; i >= 0; i-- {
+		fmt.Println("O foquete vai decolar em", i)
+	}
+	fmt.Println("DECOLANDOOOO.....")
+}
+*Nesse código acima criamos um for onde declaramos uma variável, colocamos uma condição para onde ela continue acontecendo, e diminuimos 1, a cada loop*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+package main
+
+import "fmt"
+
+func main() {
+	maiorIdade := 18
+	idade := 0
+	for idade < maiorIdade {
+		fmt.Println("Você tem", idade, "anos de idade, ainda não pode beber")
+		idade++
+	}
+	fmt.Println("Agora sim, você já tem", idade, "anos de idadetoma aqui uma breja")
+}
+*Nesse código acima criamos um for que vai rodar enquanto a variável idade for menor do que a variável maiorIdade(condição), que mostrará uma mensagem a cada loop, e acrescentara 1 a variável idade, até que a condição não ocorra.*
+---------------------
+FOR RANGE
+package main
+
+import "fmt"
+
+func main() {
+
+	amigos := []string{"Joice", "Lucas", "Gabriel", "Luana", "Yuri"}
+
+	for indice, amigo := range amigos {
+		fmt.Printf("%v - %v\n", indice+1, amigo)
+	}
+}
+*O for range vai ser utilizado com arrays e slices, ele vai conseguir percorrer sobre todos os valores, conseguindo trazer uma lista, como ele faz no exemplo acima, mas também pode pegar valores específicos atráves do índice*
