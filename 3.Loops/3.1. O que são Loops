@@ -3,21 +3,16 @@ determinada instrução até que uma condição aconteça e quebre a repetição
 
 Em grande parte das linguagens de programação teremos as instruções FOR, FOR EACH, WHILE e SWITCH, essas palavras podem mudar um pouco de linguagem para linguagem.
 
--FOR: O for é descrito assim "for i = 0; i == 10; i++ {*Instrução que deve ser repetida até 
-que o i seja igual a 10*}, o "i = 0" é uma variável criada especificamente para aquela 
-instrução for e só vai existir dentro dos seus codeblocks, o "i==10" é a condição que ela 
-tem que chegar para que a repetição pare, e o "i++" é o que faz com que o i inicializado em 
-0 adcione 1 número a cada repetição, fazendo com que o i chegue na condição estipulada, caso 
-contrário o programa pararia pois ficaria rodando eternamente.
+-FOR: O for é descrito assim "for i = 0; i == 10; i++ {*Instrução que deve ser repetida até que o i seja igual a 10*}, o "i = 0" é uma variável criada especificamente para aquela instrução for e só vai existir dentro dos seus codeblocks, o "i==10" é a condição que ela tem que chegar para que a repetição pare, e o "i++" é o que faz com que o i inicializado em 0 adcione 1 número acada repetição, fazendo com que o i chegue na condição estipulada, caso contrário o programa pararia pois ficaria rodando eternamente.
 
--FOR EACH(FOR RANGE): O for each que em Go é chamado de for range, serve para percorrer todas as 
-variáveis de um determinado array ou slice, coisas que vamos ver futuramente, então deixarei para explicar quando chegarmos lá.
+-FOR EACH(FOR RANGE): O for each que em Go é chamado de for range, serve para percorrer todas as variáveis de um determinado array ou slice, coisas que vamos ver futuramente, então deixarei para explicar quando chegarmos lá.
 
 -WHILE: Em GO o comando while não existe, mas em grande parte das linguagens ele existe, diferente do for, ele não vai para quando a condição for atendida, mas sim quando ela parar de ser.
 
 -SWITCH: O switch existe em diversas linguagens de programação podendo não se chamar switch em todas elas, ele analisa uma variável em específico e analisa o valor inserido nela, por exemplo:
 var sexoCriança string = "M"
 
+...
 switch sexoCriança {
   case "F": <---- Se a variável conter este valor
     fmt.Println("Parabéns você vai ter uma menina!") <---- Este código será executado
@@ -29,3 +24,4 @@ switch sexoCriança {
   default: <---- Caso nenhum dos casos conter o valor correto
     fmt.Println("Você não está grávida.") <--- Este código será executado
 }
+...
